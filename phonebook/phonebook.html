@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<html>
+    <head>
+        <title>Phonebook</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/phonebook.css"/>
+    </head>
+    <body>
+	<div class="container text-center bg-light">
+		<div class="row">
+			<div class="col-12">
+				<span class="fs-4">Телефонный справочник </span>
+			</div>
+		</div>
+		<div class="row gx-1">
+			<div class="col-7 border border-1 rounded-2 border-primary">
+				<div class="text-center">
+					<img src="" class="rounded-circle mt-1 w-50 h-50 d-none" alt="..." id="photo">
+			    </div>
+				<h1 id="h1PhoneNumber"><span class="outText badge bg-secondary my-1" id="phoneNumber"></span></br></h1>
+				<h1 class="d-none" id="h1LongPhNumber" ><span class="outText badge bg-info my-1" id="longPhNumber"></span></br></h1>
+				<h2><span id="employeeName"></span></h2>
+				<h6 class="d-none" id="h1Birthday"><span class="outText fst-italic my-0 py-0" id="birthday"></span></h6>
+				<h6><span class="outText my-0 py-0" id="office"></span></h6>
+				<h6><span class="outText my-0 py-0" id="brandName"></span></h6>
+				<h6><span class="outText my-0 py-0" id="departamentName"></span></h6>
+				<h5><span class="outText my-0 py-0 text-primary" id="jobTitleName"></span></h5>
+			</div>
+			<div class="col-5 border border-1 rounded-2  border-primary">
+				<label for="phNumber" class="form-label mb-0">Номер телефона</label>
+				<input type="text" class="c_number form-control-sm inp" id="phNumber">	
+				<label for="fio" class="form-label mb-0">ФИО</label>
+				<input type="text" class="form-control-sm mt-0 inp" id="fio">
+				<label for="officeList" class="form-label">Офис</label>
+				<select class="form-select inp" id="officesList"></select>
+				<label for="brandsList" class="form-label">Бренд</label>
+				<select class="form-select inp" id="brandsList"></select>
+				<label for="depList" class="form-label">Отдел</label>
+				<select class="form-select inp" id="depList"></select>
+				<label for="jtList" class="form-label">Должность</label>
+				<select class="form-select mb-2 inp" id="jtList"></select>
+			</div>		   
+		</div>
+		<div class="row gx-1 d-none"  id="listDiv">
+			<div class="card col-12 border border-1 rounded-2  border-primary mt-1 p-0" id="colListDiv">
+				<div class="list-group" id="employeeList"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="d-grid gap-2 col-12 mx-auto m-1">
+				 <button class="btn btn-primary btn-sm inp" type="button" id="findBtn" >Найти</button>
+				 <button class="btn btn-secondary btn-sm inp d-none" type="button" id="testBtn" >Тест</button>
+			</div>
+		</div>
+	</div>
+<!--
+	    <h3>Телефонный справочник</h3>
+	    <label>Номер телефона</label>
+	    <input type="text" id="phNumber"  class="c_number">
+		<label>ФИО</label> 
+		<input type="text" id="fio">
+		<label>Бренд</label></br>
+		<select id="brandsList"></select>
+		<label>Отдел</label></br>
+		<select id="depList"></select>
+		<label>Должность</label></br>
+		<select id="jtList"></select>	
+		</br>
+		</br>
+        <button id="findBtn" >Найти</button>
+		<span class="outText" id="phoneNumber"></span></br>
+		<h3><span id="employeeName"></span></h3>
+		<span class="outText" id="brandName"></span></br>
+		<span class="outText" id="departamentName"></span></br>
+		<span class="outText" id="jobTitleName"></span></br>
+		<div id="listDiv">
+		    <table id="temployeeList">
+		    </table>
+		</div>
+-->		
+		<script src="js/bootstrap.bundle.js"></script>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script charset="utf-8" src="js/phonebook.js"></script></br>				
+    </body>
+</html>

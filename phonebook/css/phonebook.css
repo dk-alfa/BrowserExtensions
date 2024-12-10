@@ -1,0 +1,53 @@
+
+body {
+    font: 1rem/1.5 var(--bs-font-sans-serif);
+    width:500px;
+}
+
+.itr {
+	cursor: pointer;
+}
+
+#colListDiv{
+	max-height: 100px;
+	overflow-y: auto;
+}
+
+#employeeList{
+	  overflow: auto;
+  border-radius: 2px;
+}
+/*
+button {
+    width:100%;
+    border-width:0px;
+    border-radius:20px;
+    padding:5px;
+    font-weight: bold;
+    cursor:pointer;
+}
+#listDiv{
+	border-width: 1px;
+	display: none;
+	border-style: solid;
+	border-radius:5px;
+    border-color: gray;
+}
+td {
+	cursor: pointer;
+}
+select {
+	width:180px;
+}
+
+html.wait, html.wait * {
+  cursor: wait !important;
+}
+
+.wait{
+	cursor: wait !important;
+}
+*/
+body.wait, body.wait *{
+    cursor: wait !important;   
+}
